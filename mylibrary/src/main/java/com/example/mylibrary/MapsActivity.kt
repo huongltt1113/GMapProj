@@ -104,7 +104,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
                             )
 
                             mMap.setOnPolylineClickListener {
-                                Toast.makeText(this, "Khoảng cách: $distance mét", Toast.LENGTH_LONG).show()
+                                Toast.makeText(this, "Helu, day la library ne", Toast.LENGTH_LONG).show()
                             }
                             polyline.isClickable = true // Enable polyline click
                         }

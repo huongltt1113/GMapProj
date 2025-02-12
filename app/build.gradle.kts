@@ -50,4 +50,6 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     implementation("io.github.huongltt1113:baseprojectlib:1.0.7")
+    implementation(project(":mylibrary"))
+
 }

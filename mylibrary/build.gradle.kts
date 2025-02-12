@@ -10,7 +10,7 @@ plugins {
 }
 
 group = "io.github.huongltt1113"
-version = "1.1.0"
+version = "1.1.1"
 
 android {
     namespace = "io.github.huongltt1113"
@@ -60,7 +60,7 @@ mavenPublishing {
     coordinates(
         groupId = "io.github.huongltt1113",
         artifactId = "mylibrary",
-        version = "1.1.0"
+        version = "1.1.1"
     )
 
     pom{
