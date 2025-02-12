@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.example.gmapproj"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         minSdk = 24
@@ -49,5 +49,5 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    implementation("io.github.huongltt1113:mylibrary:1.0.7")
+    implementation("io.github.huongltt1113:baseprojectlib:1.0.7")
 }

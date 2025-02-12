@@ -8,6 +8,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import com.example.baseprojectlib.Car
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
 import com.google.android.gms.maps.CameraUpdateFactory
@@ -103,6 +104,8 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
                             )
 
                             mMap.setOnPolylineClickListener {
+                                val car = Car()
+                                Toast.makeText(this, car.sayHello("Hihi"), Toast.LENGTH_SHORT).show()
                             }
                             polyline.isClickable = true // Enable polyline click
                         }
