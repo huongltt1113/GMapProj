@@ -1,4 +1,4 @@
-package com.example.gmapproj
+package com.example.mylibrary
 
 import android.Manifest
 import android.content.pm.PackageManager
@@ -15,7 +15,8 @@ import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.*
-import com.example.gmapproj.databinding.ActivityMapsBinding
+import io.github.huongltt1113.R
+import io.github.huongltt1113.databinding.ActivityMapsBinding
 
 class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
@@ -103,6 +104,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
                             )
 
                             mMap.setOnPolylineClickListener {
+                                Toast.makeText(this, "Khoảng cách: $distance mét", Toast.LENGTH_LONG).show()
                             }
                             polyline.isClickable = true // Enable polyline click
                         }

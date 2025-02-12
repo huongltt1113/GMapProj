@@ -49,5 +49,5 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    implementation ("com.github.huongltt1113:GMApProj:v1.0.7")
+    implementation("io.github.huongltt1113:mylibrary:1.0.7")
 }
